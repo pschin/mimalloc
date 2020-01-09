@@ -25,7 +25,7 @@ const mi_page_t _mi_page_empty = {
   #if (MI_INTPTR_SIZE==8 && defined(MI_ENCODE_FREELIST)) || (MI_INTPTR_SIZE==4 && !defined(MI_ENCODE_FREELIST))
   , { NULL } // padding
   #endif
-};
+}
 
 #define MI_PAGE_EMPTY() ((mi_page_t*)&_mi_page_empty)
 #define MI_SMALL_PAGES_EMPTY  \
